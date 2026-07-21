@@ -82,7 +82,7 @@ function onInput(e) {
   }
   // ================== data helper ============
   let searchHelper = [];
-  fetchSearchMovies(searchValue).then(r => {
+  fetchSearchMovies(searchValue, page).then(r => {
     const serchResults = r.results;
     // console.log(serchResults);
     const sortByVoteResults = serchResults.sort(
